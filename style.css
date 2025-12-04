@@ -1,0 +1,124 @@
+/* Reset CSS */
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body{
+    height: 100vh;
+    background: linear-gradient(135deg,#7a5dc0,#ea73ce);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container{
+    border: 2px solid white;
+    width: 60%;
+    max-width: 550px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* New Task input section */
+#newtask{
+    background-color: #fff;
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px 30px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px #5e5b5b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#input1{
+    padding: 8px;
+    width: 70%;
+    border: 2px solid #bbb5b5;
+    border-radius: 2px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Add button */
+#push{
+    padding: 8px 20px;
+    border-radius: 4px;
+    background-color: #7a5dc0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+#push:hover{
+    background-color: rgb(28, 149, 28);
+}
+
+/* Tasks container */
+#tasks{
+    background-color: #fff;
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px #5f5c5c;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Each task */
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+/* Task text */
+.task span{
+    flex: 1;
+    font-size: 16px;
+}
+
+/* Task buttons */
+.task button{
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Edit button */
+.task button:nth-child(2){
+    background-color: #2196F3;
+    color: white;
+}
+.task button:nth-child(2):hover{
+    background-color: #0b7dda;
+}
+
+/* Delete button */
+.task button:nth-child(3){
+    background-color: #f44336;
+    color: white;
+}
+.task button:nth-child(3):hover{
+    background-color: #da190b;
+}
