@@ -29,13 +29,7 @@ document.getElementById("push").onclick = function() {
             tasks.removeChild(task);
         }
         
-        // EDIT event
-        // editBtn.onclick = function() {
-        //     let newValue = prompt("Edit task:", text.innerText);
-        //     if (newValue !== null && newValue !== "") {
-        //         text.innerText = newValue;
-        //     }
-        // };
+      
         editBtn.onclick = function(){
             let newValue = prompt("edit task",text.innerText)
             if(newValue !=null && newValue !==""){

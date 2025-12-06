@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="inputdata" type="text" placeholder="enter a task">
+    <button id="addbtn">add</button>
+
+<script>
+    
+   var inputvalue ;
+   document.getElementById("addbtn").onclick=function(){
+    
+    inputvalue = document.getElementById("inputdata").value;
+    if(inputvalue==""){
+        alert("enter a task");
+    }
+    else{
+        let div = document.createElement("div")
+        div.className="task"
+        let span = document.createElement("span")
+        span.innerText=inputvalue
+        let deletebtn = document.createElement("btn")
+        deletebtn.innerText="delete"
+        let editbtn = document.createElement("btn")
+        editbtn.innerText="edit"
+        div.appendChild(span)
+        span.appendChild(inputvalue)
+        span.append(deletebtn)
+        span.append(editbtn)
+        deletebtn.onclick = function(){
+        }        
+    }
+   }
+    inputvalue="";
+    
+</script>
+</body>
+</html>
